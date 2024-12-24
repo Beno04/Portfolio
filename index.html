@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Portfolio de Lucas BENAULT</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="accueil">
+        <div class="container">
+            <h1 class="title">Bienvenue sur mon Portfolio</h1>
+            <h2 class="subtitle-main">Étudiant en BTS SIO SLAM</h2>
+            <p class="description">Durant mes deux années de BTS j'ai effectué mon alternance au Conseil Régional des Hauts de France la première année en tant que technicien au poste de travail
+                et la deuxième du côté de l'infrastructure qui travaille avec les techniciens du poste de travail pour la mise en place des équipements, logiciel et la maintenance.</p>
+        </div>
+    </section>
+
+    <section id="competences">
+        <h2>Mes Compétences</h2>
+        <div class="skills-container">
+            <div class="skill-card" data-skill="HTML">
+                <div class="skill-level" style="--level: 90%;">
+                    <span>90%</span>
+                </div>
+                <h3>HTML</h3>
+            </div>
+            <div class="skill-card" data-skill="CSS">
+                <div class="skill-level" style="--level: 85%;">
+                    <span>85%</span>
+                </div>
+                <h3>CSS</h3>
+            </div>
+            <div class="skill-card" data-skill="JavaScript">
+                <div class="skill-level" style="--level: 80%;">
+                    <span>80%</span>
+                </div>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card" data-skill="PHP">
+                <div class="skill-level" style="--level: 90%;">
+                    <span>90%</span>
+                </div>
+                <h3>PHP</h3>
+            </div>
+            <div class="skill-card" data-skill="Dart">
+                <div class="skill-level" style="--level: 40%;">
+                    <span>40%</span>
+                </div>
+                <h3>Dart</h3>
+            </div>
+            <div class="skill-card" data-skill="C#">
+                <div class="skill-level" style="--level: 50%;">
+                    <span>50%</span>
+                </div>
+                <h3>C#</h3>
+            </div>
+            <div class="skill-card" data-skill="PowerShell">
+                <div class="skill-level" style="--level: 30%;">
+                    <span>30%</span>
+                </div>
+                <h3>PowerShell</h3>
+        </div>
+    </section>
+    
+    
+    <section id="projets">
+        <h2>Mes projets en cours et en entreprise : </h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <a href="#">
+                        <h3>Mise en place de MarieTeam</h3><br>
+                    </a>
+                    <p>MarieTeam est un projet de groupe effectué avec un camarade de classe, ce projet est divisé en trois différentes parties dans un contexte bien précis développer 
+                        une compagnie de transports maritimes : <br>
+                        - Une application web de gestion de transport voyageur. <br>
+                        - La création d'un client lourd pour l'édition de brochures. <br>
+                        - Le développement d'une application mobile native. <br>
+                        - La gestion des incidents. 
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <a href="#">
+                        <h3>Gestion du parc informatique de l'entreprise</h3><br>
+                    </a>
+                    <p>Durant mon alternance, le Conseil Régional a mis en place l'application GLPI afin de pouvoir recenser l'ensemble des équipements informatiques de l'entreprise
+                        afin de pouvoir par la suite gérer plus simplement les incidents et les demandes de maintenance. <br>
+                        Avec l'aide de plusieurs collègues techniciens nous avons dû renseigner l'ensemble des équipements informatiques de l'entreprise, dans un premier temps effectuer un scan 
+                        dans l'ensemble des différents bureaux et ensuite les injecter dans l'application associée aux bonnes personnes.
+                    </p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <a href="#">
+                        <h3>Gestion et mappage de nouveaux lecteurs réseaux</h3><br>
+                    </a>
+                    <p>Nous avons dû effectuer une migration de certains lecteurs réseaux durant ma deuxième année, en collaboration avec un prestataire nous avons créé des scripts PowerShell
+                        afin de pouvoir créer et mapper ces lecteurs réseaux qui sont des lecteurs de stockage pour les agents donc propres et accessibles uniquement par eux et la DSI. 
+                        Il a fallu ensuite les intégrer aux GPO avec certaines règles pour faire un nettoyage tous les X temps, et une suppression automatique 4 mois après un départ définitif
+                        d'un agent. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <a href="mailto:lucas.benault1@gmail.com" class="contact-link email-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="email-icon">
+                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <span>lucas.benault1@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/lucas-benault/" target="_blank" rel="noopener noreferrer" class="contact-link linkedin-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="linkedin-icon">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>Mon profil LinkedIn</span>
+            </a>
+            <a href="CV Lucas.pdf" target="_blank" rel="noopener noreferrer" class="contact-link cv-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cv-icon">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <line x1="10" y1="9" x2="8" y2="9"></line>
+                </svg>
+                <span>Télécharger mon CV</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

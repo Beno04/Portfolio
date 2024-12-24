@@ -12,6 +12,23 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Modification des titres de section */
+section h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Garder le style spécifique du titre d'accueil */
+.title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 1s ease;
+}
+
 /* Navigation */
 nav {
     position: fixed;
@@ -57,44 +74,194 @@ nav {
 /* Sections */
 section {
     min-height: 100vh;
-    padding: 6rem 2rem;
+    padding: 6rem rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+/* Amélioration de la section accueil */
 #accueil {
     background: linear-gradient(135deg, #2c3e50, #3498db);
     color: white;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#accueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, rgba(52, 152, 219, 0.2) 0%, rgba(44, 62, 80, 0.2) 100%);
+    pointer-events: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.profile-section {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    animation: fadeInLeft 1s ease;
+}
+
+.content-section {
+    text-align: left;
+    flex-grow: 1;
 }
 
 .title {
     font-size: 3.5rem;
-    margin-bottom: 1rem;
-    animation: fadeInUp 1s ease;
-}
-
-.subtitle {
-    font-size: 1.5rem;
-    opacity: 0.9;
-    animation: fadeInUp 1s ease 0.3s backwards;
+    margin-bottom: 1.5rem;
+    animation: fadeInRight 1s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .subtitle-main {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: white;
+    margin-bottom: 2rem;
+    color: #ecf0f1;
+    animation: fadeInRight 1s ease 0.2s backwards;
 }
 
 .description {
     font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto;
     line-height: 1.8;
     color: rgba(255, 255, 255, 0.9);
+    animation: fadeInRight 1s ease 0.4s backwards;
+}
+
+.description a {
+    color: #ecf0f1;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(236, 240, 241, 0.4);
+    transition: border-color 0.3s;
+}
+
+.description a:hover {
+    border-color: #ecf0f1;
+}
+
+/* Expériences professionnelles */
+.exp-container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.exp-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #3498db;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: relative;
+    margin-bottom: 2.5rem;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    align-self: flex-end;
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 0;
+    left: 50%;
+}
+
+.timeline-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+}
+
+.timeline-date {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #3498db;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    left: -40px;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    right: -40px;
 }
 
 /* Compétences */

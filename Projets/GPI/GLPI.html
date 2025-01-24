@@ -1,0 +1,76 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet MarieTeam</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Gestion du parc et gestion des incidents</div>
+            <ul class="nav-links">
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#GLPI">GLPI</a></li>
+                <li><a href="#ICARE">ICARE</a></li>
+                <li><a href="../../index.html">Accueil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="presentation">
+        <h2>Présentation du Projet</h2>
+        <p>Durant mon alternance le conseil Régional a acquis une nouvelle application qui est GLPI qui nous permet dans un premier temps de pouvoir, gérer l'ensemble du parc informatique
+            c'est a dire les ordinateurs (portables ou fixe), les écrans les stations d'accueil ou encore tout périphériques externe, cette application nous permet d'abord d'avoir les informations
+            essentielles comme a qui est doté le matériel, ou il est situé, quels composants il continent etc... qui nous permettra par la suite d'en faire la gestion de tickets. <br>
+            Aujourd'hui la gestion de tickets se fait sur un site externe nommé ICARE, qui nous permet de gérer les différentes demandes et incidents des agents région ou encore des agents
+            qui sont situés dans les lycées, le problème de cet outil est qu'il commence a être obsolète, les SLA ne sont pas corrects, et il couté un certain prix de maintenance d'où la
+            migration vers GLPI par la suite.
+        </p>
+    </section>
+
+    <section id="GLPI">
+        <h2>GLPI</h2>
+        <p>GLPI nous permet donc de pouvoir gérer le patrimoine informatique du conseil régionnal, qui est divisé en quatres sites (Lille, Amiens, Boulogne et Calais), qui sont ensuite constitués
+            d'antennes dans les lycée comme Arras etc... <br> a quoi nous sert GLPI :
+        <ul>
+            <li>Avoir les informationssur a qui est doté le matériel</li>
+            <li>Avoir la localisation du matériel</li>
+            <li>Liste des composants</li>
+            <li>Obtenir un historique de l'ordinateur</li>
+            <li>Migrer vers une plateforme de ticketting par la suite</li>
+        </ul>
+        Screenshots de l'interface : <br>
+        <img src="Infos.PNG" alt="Informations" class="GLPI" ><br>
+        <img src="Composants.PNG" alt="Composants" class="GLPI"><br>
+        <img src="Historique.PNG" alt="Historique" class="GLPI"><br>
+       Voila un apperçu de GLPI avec tickets qui est pour le moment indisponible : <br>
+        <img src="Tickets.PNG" alt="Tickets" class="GLPI-ticket" >
+    </p>
+    </section>
+
+    <section id="ICARE">
+        <h2>ICARE</h2>
+        <p>ICARE est donc une plateforme qui nous permet donc de gérer nos tickets de demandes ou d'incidence, tout d'abord quand les tickets arrive ils sont afféctés a une équipe
+            qui est accessible par les techniciens afin de redispatcher les tickets en fonctions de l'endroit ou il doit être résolu c'est a dire aux techniciens des différents sites et surtout
+            au bons services, par exemple les technicien, le service infrastructure, le service RH etc... voici les différentes fonctionnalités de cet ITSM 
+        <ul>
+            <li>Répondre aux incidents</li>
+            <li>Traiter les demandes</li>
+            <li>Pouvoir extraire des statistiques afin de pouvoir créer des solutions aux problèmes les plus fréquents</li>
+        </ul>
+        Voici le processus de résolution d'un ticket : <br><br>
+        <img src="création de tickets.PNG" alt="création de tickets" class="GLPI" ><br>
+        voila l'écran que les techniciens ont quand un tickets arrive <br><br>
+        <img src="affectation a une équipe.PNG" alt="affectation a une équipe" class="GLPI"><br>
+        ils doivent ensuite le dispatcher a la bonne équipe et l'affecter a un technicien (généralement soi-même) <br><br>
+        <img src="passage en résolu.PNG" alt="Passage en résolu" class="GLPI"><br>
+        Une fois le ticket résolu ils doivent passer le statut en mode résolu <br><br>
+        <img src="message de résolution.PNG" alt="message de résolution" class="GLPI"><br>
+        Pour au final entrer un message de résolution en bas a gauche avec un code de cause et une catégorie réelle au ticket (utile pour les statistiques) <br><br>
+    </p>
+    </section>
+        </div>
+    </section>
+</body>
+</html>

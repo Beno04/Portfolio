@@ -129,9 +129,14 @@ section {
     animation: fadeInLeft 1s ease;
 }
 
-.GLPI {
+.img {
     width: 1500px;
     height: 800px;
+}
+
+.img-mobile {
+    width: 350px;
+    height: 700px;
 }
 
 .GLPI-ticket {

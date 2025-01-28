@@ -1,0 +1,81 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet MarieTeam</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Mappage réseaux et déploiement de packages</div>
+            <ul class="nav-links">
+                <li><a href="#presentation">Présentation</a></li>
+                <li><a href="#realisation1">PowerShell</a></li>
+                <li><a href="#realisation2">Packages</a></li>
+                <li><a href="../../index.html">Accueil</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="presentation">
+        <h2>Présentation des Projets</h2>
+        <p>Durant mon alternance je suis passé aux cotés du service infrastructure dans mon entreprise, durant mon année j'ai été intégrer a différents projets, dont ceux que je vous présente ci desous
+            les agents ont accès a des lecteurs réseaux afin de stocker des données, et les gérer a la mains un a un est fastidieux car il y a plus de 3000 agents donc nous sommes ammenés a gérer tout cela via des scripts
+            PowerShell. le deuxième point que je vais vous présenter et le déploiement de packages d'application via une console lourde pour que ces dernières remontent automatiquement
+            sur les PC des agents.
+        </p>
+    </section>
+
+    <section id="realisation1"><br><br><br>
+        <h2>Script PowerShell </h2>
+        <p>Les agents ont donc accès a des lecteurs réseaux individuels, et des lecteurs réseaux limités accessibles seulement aux agents dans la direction concernés, notre rôle dans tout cela et 
+            de maintenir en service ces leceturs afin que les agents puissent travailler correctement.
+            <br><br>
+            <h3>Lecteurs individuels</h3><br>
+            <h4>Lecteur Xdemat</h4><br>
+            pour des questions de migration nous avons du modifier les chemins et donc recréer les lecteurs réseaux de chaque agents, ce dernier est utilisé pour stocker les documents scannés via
+            une imprimante. Voici comment nous avons procéder en PowerShell afin de répondre a ce besoins. <br>
+
+            <img src="PW demat1.PNG" alt="script PowerShell mappage lecteur 1" class="GLPI-tickets"><br>
+            <img src="PW demat2.PNG" alt="script PowerShell mappage lecetur 2" class="GLPI-tickets"><br>
+            Voici comment nous avons créer et mapper les nouveaux lecteurs réseaux des agents du Conseil Régional, l'objectif de ce programme est de récuperer la localisation, le nom d'utilisateur
+            de l'agent et le chemin ou l'on doit écrire pour ensuite tout additionner pour avoir un chemin complet et ensuite de lui fournir les droits seulement a l'agent a qui appartient le dossier. <br><br><br>
+
+            <h4>Suppression des lecteurs après le départ d'un agent</h4><br>
+            Quand un agents vient a quitter la colléctivité, nous avons le devoir de garder ses lecteurs réseaux avec les données pendant 4 mois sur notre serveur, après ce délai nous pouvons les supprimer, c'est pour cela que j'ai mis en place un script de suppression via une tache planifié et qui me renvoie un mail pour que je sois tenu au courant de si la tache est correctement efféctué ou si il y a des erreurs. voici le script : <br>
+
+            <img src="suppMail PW1.PNG" alt="Suppression avec mail des lecteurs réseaux 1" class="GLPI-tickets"> <br>
+            <img src="suppMail PW2.PNG" alt="Suppression avec mail des leceturs réseaux 2" class="GLPI-tickets"> <br>
+
+            Ce programme va chercher un fichier excel mis a jour chaque jour recensant les noms d'utilisateur des agents partis de la colléctivité depuis plus de 4 mois, pour ensuite faire ligne par ligne et supprimer les lecteurs réseaux appartenant a cet agent, et envoie un mail pour dire si tout c'est bien passé ou si il y a des erreurs afin que nous puissions reprendre 1 par 1 en fonctions des soucis. <br><br><br>
+
+            <h3>Lecteurs collectifs</h3><br>
+            Les différentes directions de la collectivités sont re organisés, la DSI intervient dans ce sujet car pour éviter des suppression intenpestives ou dues a des erreurs elle doit admninistrer et gérer les deux premiers niveaux des dossiers de ces directions. Les directions sont donc contraintes de nous fournir un plan de classement dans un fichier excel afin que l'on créer via PowerShell les dossiers sur le réseaux. Voici le script : <br>
+
+            <img src="dir PW1.PNG" alt="Script création dossier direciton 1" class="GLPI-tickets"><br>
+            <img src="dir PW2.PNG" alt="Script création dossier direciton 2" class="GLPI-tickets"><br>
+
+            Ce script ci dessus, reprends les différents chemins ou l'on doit écrire, afin ensuite d'aller analyser notre fichier excel ou les noms de chemins sont renseigner afin d'automatiser la tache de création des dossiers et sous dossiers en se limitant aux niveau 1 et niveau 2. <br><br>
+        </p>
+    </section>
+
+    <section id="realisation2"><br><br><br>
+        <h2>Déploiement de packages d'applications</h2>
+        <p>Les agents de la collectivité auront besoin pendant leurs contrats de différentes application dont nous avons les licences, nous avons donc le devoir de déployer ces applications sur leurs ordinateurs afin qu'ils puissent travailler dans de bonnes conditions. <br>
+            Voici un exemple des différentes tâches de déploiement d'applications ou de services sur les ordinateurs des agents : <br>
+
+            <img src="listeTP.PNG" alt="Liste des tâches planifiées"><br><br>
+            Ici nous avons donc une partie des différentes tâches planifées créer par les agents du service infrastructure. <br><br>
+
+            <img src="exempleTP.PNG" alt="Exemple tâche planifiée" class="GLPI-tickets"><br>
+            si nous sélectionnons une tâche, voila la fenêtre que cela ouvre, nous pouvons donc voir si le déploiement a réussi échoué ou est en attente, et si elle est échoué nous pouvons voir suite a quelle code d'erreur elle a échouée. cela nous permet du coup de pouvoir intervenir et/ou modifier notre package si besoin, voici un détail de la liste que nous avons quand nous cliquons sur un code d'erreur, pour que les détails soient précis. <br><br>
+
+            <img src="listeErreurTP.PNG" alt="Liste des erreurs de la tâche planifiée" class="GLPI-tickets"><br><br>
+        </p>
+
+        <footer class="footer">
+            <p>Copyright © 2024 Lucas BENAULT</p>
+        </footer>
+    </section>

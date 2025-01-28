@@ -22,6 +22,19 @@ section h2 {
     letter-spacing: 1px;
 }
 
+h3{
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h4{
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
 /* Garder le style spécifique du titre d'accueil */
 .title {
     font-size: 3.5rem;
@@ -411,60 +424,158 @@ section {
     padding: 1.5rem;
 }
 
-/* Contact */
-.contact-info {
+/* Section contact */
+#contact {
+    min-height: 100vh;
+    padding: 4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  /* Liens de contact */
+  .contact-info {
+    padding-right: 2rem;
+  }
+  
+  .contact-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.contact-link {
+    gap: 1rem;
+  }
+  
+  .contact-link {
     display: flex;
     align-items: center;
     gap: 1rem;
     text-decoration: none;
     color: #2c3e50;
-    font-size: 1.2rem;
-    padding: 1rem 2rem;
-    border-radius: 8px;
-    background: white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 320px;
-}
-
-.contact-link:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-.contact-link svg {
-    min-width: 24px;
-}
-
-.email-icon {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-link:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .contact-link svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .email-icon {
     color: #ea4335;
-}
-
-.linkedin-icon {
+  }
+  
+  .linkedin-icon {
     color: #0077b5;
-}
-
-.cv-icon {
-    color: #34495e;
-}
-
-.github-icon {
+  }
+  
+  .github-icon {
     color: #333;
-}
+  }
+  
+  .cv-icon {
+    color: #34495e;
+  }
+  
+  /* Formulaire */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .submit-button svg {
+    width: 20px;
+    height: 20px;
+  }
 
-.github-link:hover {
-    background: #f6f8fa;
-}
-
+  /* Footer */
 .footer {
     text-align: center;
     padding: 1rem;
@@ -477,8 +588,6 @@ section {
     box-shadow: 0 -2px 10px rgb(48, 124, 175);
     z-index: 1000;
 }
-
-
 
 .screenshots-container {
     display: flex;

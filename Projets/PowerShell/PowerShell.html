@@ -33,7 +33,7 @@
         <p>Les agents ont donc accès a des lecteurs réseaux individuels, et des lecteurs réseaux limités accessibles seulement aux agents dans la direction concernés, notre rôle dans tout cela et 
             de maintenir en service ces leceturs afin que les agents puissent travailler correctement.
             <br><br>
-            <h3>Lecteurs individuels</h3><br>
+            <h5>Lecteurs individuels</h5><br>
             <h4>Lecteur Xdemat</h4><br>
             pour des questions de migration nous avons du modifier les chemins et donc recréer les lecteurs réseaux de chaque agents, ce dernier est utilisé pour stocker les documents scannés via
             une imprimante. Voici comment nous avons procéder en PowerShell afin de répondre a ce besoins. <br>
@@ -51,7 +51,7 @@
 
             Ce programme va chercher un fichier excel mis a jour chaque jour recensant les noms d'utilisateur des agents partis de la colléctivité depuis plus de 4 mois, pour ensuite faire ligne par ligne et supprimer les lecteurs réseaux appartenant a cet agent, et envoie un mail pour dire si tout c'est bien passé ou si il y a des erreurs afin que nous puissions reprendre 1 par 1 en fonctions des soucis. <br><br><br>
 
-            <h3>Lecteurs collectifs</h3><br>
+            <h5>Lecteurs collectifs</h5><br>
             Les différentes directions de la collectivités sont re organisés, la DSI intervient dans ce sujet car pour éviter des suppression intenpestives ou dues a des erreurs elle doit admninistrer et gérer les deux premiers niveaux des dossiers de ces directions. Les directions sont donc contraintes de nous fournir un plan de classement dans un fichier excel afin que l'on créer via PowerShell les dossiers sur le réseaux. Voici le script : <br>
 
             <img src="dir PW1.PNG" alt="Script création dossier direciton 1" class="GLPI-tickets"><br>
@@ -74,8 +74,11 @@
 
             <img src="listeErreurTP.PNG" alt="Liste des erreurs de la tâche planifiée" class="GLPI-tickets"><br><br>
         </p>
-
-        <footer class="footer">
-            <p>Copyright © 2024 Lucas BENAULT</p>
-        </footer>
     </section>
+
+    <footer class="footer">
+        <p>Copyright © 2024 Lucas BENAULT</p>
+    </footer>
+    
+</body>
+</html>

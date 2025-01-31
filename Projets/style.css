@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Modification des titres de section */
+section h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+h5{
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h4{
+    text-align: center;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+
+/* Navigation */
+nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+section p {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+    padding: 0 1rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+/* Images */
+.img {
+    max-width: 1500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    transition: transform 0.3s ease;
+    background: white;
+    padding: 1rem;
+}
+
+.img:hover {
+    transform: translateY(-5px);
+}
+
+.img-mobile {
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    transition: transform 0.3s ease;
+    background: white;
+    padding: 1rem;
+}
+
+.img-mobile:hover {
+    transform: translateY(-5px);
+}
+
+.GLPI-ticket:hover {
+    transform: translateY(-5px);
+}
+
+.GLPI-ticket {
+    max-width: 1500px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    transition: transform 0.3s ease;
+    background: white;
+    padding: 1rem;
+}
+
+/* Compétences */
+#competences {
+    min-height: auto;
+    padding: 6rem 3rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.skill-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+    position: relative;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card a {
+    text-decoration: none;
+    color: #2c3e50;
+    display: block;
+}
+
+.checkmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #4CAF50;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover .checkmark {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+  /* Footer */
+  .footer {
+    background-color: rgb(48, 124, 175);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 -2px 10px rgb(48, 124, 175);
+  }

@@ -12,35 +12,39 @@
             <ul class="nav-links">
                 <li><a href="#presentation">Présentation</a></li>
                 <li><a href="#realisation1">Réalisation Pro 1</a></li>
-                <li><a href="#realisation3">Réalisation Pro 3</a></li>
+                <li><a href="#realisation3">Réalisation Pro 2</a></li>
                 <li><a href="#competences">Compétences</a></li>
                 <li><a href="../../index.html">Accueil</a></li>
             </ul>
         </div>
     </nav>
 
+
     <section id="presentation">
+
         <h2>Présentation du Projet</h2>
         <p>MarieTeam est une compagnie spécialisée dans le transport maritime de passagers et de marchandises, 
         assurant la liaison entre le continent et plusieurs îles du littoral français. Grâce à son expertise et à une flotte moderne, la société garantit des traversées sûres, 
         régulières et adaptées aux besoins des voyageurs comme des professionnels du fret.
         Dans le cadre de son développement, MarieTeam souhaite moderniser son système de gestion des liaisons maritimes en mettant en place une 
         application web dynamique et une application mobile dédiée aux capitaines.</p>
-        <h2>Objectifs du projet</h2>
-        Le projet vise à :
+        <p>MarieTeam mise sur ces innovations pour améliorer l’expérience utilisateur, optimiser la gestion de ses traversées et renforcer sa compétitivité sur le marché 
+            du transport maritime.<br>
+            Pour réaliser se projet , nous avons choisi de travailler en équipe de 3 personnes, afin de travailler le mode projet en groupe.</p> 
+        <h2>Les objectifs du projets sont :</h2>
+        <ul class="list">
             <li>Offrir aux clients une plateforme intuitive pour consulter les liaisons maritimes, les tarifs et les horaires des traversées.</li>
             <li>Mettre en place un système de réservation en ligne, permettant une gestion fluide des billets et des places disponibles.</li>
             <li>Développer une application mobile pour les capitaines, afin d’améliorer la collecte et la transmission des données en mer, malgré les zones de faible connectivité.</li>
             <li>Assurer une gestion sécurisée et optimisée des accès, notamment pour les administrateurs et les responsables de la compagnie.</li>
+        </ul>
             <br>
-            MarieTeam mise sur ces innovations pour améliorer l’expérience utilisateur, optimiser la gestion de ses traversées et renforcer sa compétitivité sur le marché du transport maritime. <br>
-            Pour réaliser se projet , nous avons choisi de travailler en équipe de 3 personnes, afin de travailler le mode projet en groupe.
     </section>
 
     <section id="realisation1"><br><br><br>
         <h2>Réalisation Professionnelle 1 : Application Web</h2>
-        Cette partie du projet consiste en la création d'une application web permettant aux clients de :
-        <ul>
+        <p>Cette partie du projet consiste en la création d'une application web permettant aux clients de :</p>
+        <ul class="list">
             <li>Consulter les liaisons maritimes disponibles</li>
             <li>Voir les tarifs et horaires</li>
             <li>Effectuer des réservations en ligne</li>
@@ -59,9 +63,12 @@
         <p>Suite a cela nous avons donc importé le script SQL donné par looping pour créer notre base de données pour ensuite la remplir avec un jeu d'essai.</p>
 
         <img src="accueil.png" alt="accueil" class="img"> <br>
-        <img src="inscription.png" alt="inscription" class="img"> <br>
-        <p>Après avoir créer la base de données et notre jeu d'essai nous avons commencé a coder une première partie du site, nous pouvons voir d'abord la page d'accueil ainsi qu'une 
-        fonctionnalité qui est ici la page d'inscription. </p>
+        <img src="reserver.png" alt="inscription" class="img"> <br>
+        <img src="stats.png" alt="inscription" class="img"> <br>
+        <p>Après avoir créer la base de données et notre jeu d'essai nous avons commencé a coder une première partie du site, nous pouvons voir d'abord la page d'accueil 
+            ainsi que deux fonctionnalités qui sont ici la page reserver qui va chercher les informations dans la base de données pour les afficher sur le site pour que les 
+            utilisateurs puissent reserver une traversée, et la deuxième est la page statistiques côté administrateur qui permet d'aller faire un calcul dans la base de données
+            pour obtenir différentes statistiques. </p>
 
         <img src="exemple de données.png" alt="exemple de données" class="GLPI-ticket"><br>
         <p>cette fonctionnalité permet donc d'aller écrire dans la base de données les informations rentrés par les utilisateurs a l'inscription, afin de pouvoir la liaison entre le code et la BDD.
@@ -69,27 +76,31 @@
     </section>
 
     <section id="realisation3"><br><br><br>
-        <h2>Réalisation Professionnelle 3 : Application Mobile</h2>
-        Une application mobile est développée pour les capitaines, leur permettant de :
-        <ul>
-            <li>Consulter les informations de réservation</li>
-            <li>Enregistrer des données sur les conditions de navigation</li>
-            <li>Synchroniser les données avec le serveur lorsque la connexion est disponible</li><br><br>
+        <h2>Réalisation Professionnelle 2 : Création d’un client lourd pour l’édition de brochures</h2>
+        <p>Une application mobile est développée pour les capitaines, leur permettant de :</p>
+        <ul class="list">
+            <li>Se connecter au compte utilisateur/admin</li>
+            <li>Consulter les équipements d'un bateau</li>
+            <li>Ajouter un nouveau bateau, ou modifier les équipements et la photo d'un bateau existants (admin uniquement)</li>
+            <li>Générer un PDF avec toutes les informations des bateaux</li>
+            <br><br>
         </ul>
-        <p>Cette application est développée en utilisant des technologies mobiles adaptées aux besoins de MarieTeam et est destinée uniquement aux capitaines. <br>
+        <p>Cette application est développée en utilisant le langage de programmation C# adaptées aux besoins de MarieTeam et est destinée a tous types d'utilisateur. <br>
         voici comment est constitué cette application : </p>
         
-        <img src="accueil mobile.png" alt="accueil mobile" class="img-mobile"><br>
-        <p>Voici la page d'accueil de l'application mobile, elle est très simple et permet de naviguer entre les pages de l'application.</p>
+        <img src="connexion_clientLourd.png" alt="connexion_c#" class="img-marieteam"><br>
+        <p>Tout d'abord quand l'application est lancé les utilisateurs doivent se connecter afin d'accèder uniquement aux fonctionnalités compatible avec leurs comptes.</p>
 
-        <img src="connexion capitaine.png" alt="connexion capitaine" class="img-mobile"> <br>
-        <p>Pour pouvoir mettre a jour les données, il faut se connecter avec son compte capitaine, voici donc la page de connexion.</p>
+        <img src="Ui_user.png" alt="Ui_user" class="img-marieteam"> <br>
+        <img src="Ui_admin.png" alt="Ui_admin" class="img-marieteam"> <br>
+        <p>Voila comment les pages de l'application sont constitués après la connexion, la première est celle de l'utilisateur classique et donc il peut consulter 
+            les équipments des bateaux et générer un PDF qui est une brochure avec l'ensemble des bateaux et leurs équipements. <br>
+            La deuxième image est l'interface admin, cette derniere est comme les utilisateurs mais il peut ajouter un nouveau bateau, ou modifier 
+            les équipements et la photo d'un bateau existants
+        </p>
 
-        <img src="position.png" alt="position" class="img-mobile"><br>
-        <img src="retard.png" alt="retard" class="img-mobile"><br>
-        <img src="etat mer.png" alt="etat mer" class="img-mobile"><br>
-        <p>Voici donc les différentes pages de l'application mobile, nous avons donc la page de position, la page de retard, et la page d'état de la mer, qui met a jour en direct
-        les données de la base de données, qui elle met a jour en temps réel les données du site pour les clients.</p>
+        <img src="PDF.png" alt="PDF" class="img-marieteam"><br>
+        <p>Pour finir voici a quoi ressemble la brochure des bateaux une fois que l'utilisateur clique sur le bouton générer PDF depuis l'application </p>
     </section>
 
 

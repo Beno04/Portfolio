@@ -142,6 +142,10 @@ section p {
     padding: 2rem;
 }
 
+section p:hover {
+    transform: translateY(-3px);
+}
+
 /* Images */
 .img {
     max-width: 1500px;
@@ -171,6 +175,11 @@ section p {
     padding: 1rem;
 }
 
+.img-marieteam:hover {
+    transform: translateY(-5px);
+}
+
+
 .img-PW {
     max-width: 1200px;
     width: 100%;
@@ -182,14 +191,31 @@ section p {
     padding: 1rem;
 }
 
+.img-PW:hover {
+    transform: translateY(-5px);
+}
+
+.img-W11 {
+    max-width: 1600px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    transition: transform 1s ease;
+    background: white;
+    padding: 1rem;
+}
+
+.img-W11:hover {
+    transform: translateY(-5px);
+}
+
 
 .img-mobile:hover {
     transform: translateY(-5px);
 }
 
-.GLPI-ticket:hover {
-    transform: translateY(-5px);
-}
+
 
 .GLPI-ticket {
     max-width: 1500px;
@@ -201,6 +227,10 @@ section p {
     transition: transform 0.3s ease;
     background: white;
     padding: 1rem;
+}
+
+.GLPI-ticket:hover {
+    transform: translateY(-5px);
 }
 
 /* Compétences */
